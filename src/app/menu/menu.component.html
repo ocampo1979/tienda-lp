@@ -1,6 +1,7 @@
 <div>
-  <nav>
-    <a routerlink="customers/index" routerLinkActive="active">Customer</a>
-    <a routerlink="orders/add" routerLinkActive="active">Orders</a>
-  </nav>
+  <button md-button [mdMenuTriggerFor]="menu">Menu Principal</button>
+  <md-menu #menu="mdMenu">
+    <button md-menu-item routerlink="customers/index">Customer</button>
+    <button md-menu-item routerlink="orders/add">Orders</button>
+  </md-menu>
 </div>

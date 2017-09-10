@@ -1,23 +1,48 @@
-<form>
+<form #addForm= "ngForm">
     <table>
         <tr>
             <td>
-                Nombre        
+                <md-form-field>
+                    <input required mdInput placeholder="Nombre" [(ngModel)]="customer.name" name="name" #name="ngModel">
+                    <md-error>
+                        Por favor ingrese un nombre valido.
+                    </md-error>
+                </md-form-field>        
             </td>
         </tr>
         <tr>
             <td>
-                Direccion  
+                <md-form-field>
+                    <input required mdInput placeholder="Dirección" [(ngModel)]="customer.address" name="address" #address="ngModel">
+                    <md-error>
+                        Por favor ingrese una Dirección valida.
+                    </md-error>
+                </md-form-field>  
             </td>
         </tr>
         <tr>
             <td>
-                Telefono        
+                <md-form-field>
+                    <input required mdInput placeholder="Telefono" [(ngModel)]="customer.telefono" name="telefono" #telefono="ngModel">
+                        <md-error>
+                            Por favor ingrese un numero de telefono valido.
+                        </md-error>
+                </md-form-field>                
             </td>
         </tr>
         <tr>
             <td>
-                Ciudad        
+                <md-form-field>
+                    <input required mdInput placeholder="Ciudad" [(ngModel)]="customer.ciudad" name="ciudad" #ciudad="ngModel">
+                        <md-error>
+                            Por favor ingrese una ciudad valida.
+                        </md-error>
+                </md-form-field>        
+            </td>
+        </tr>
+        <tr>
+            <td>
+                
             </td>
         </tr>
     </table>

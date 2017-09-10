@@ -12,7 +12,7 @@ import { CurrentOptionComponent } from './current-option/current-option.componen
 import { IndexComponent } from './customers/index/index.component';
 import { AddComponent as OrderAddComponent} from './orders/add/add.component';
 
-import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import {
   MdAutocompleteModule,

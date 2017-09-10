@@ -1,6 +1,6 @@
 export class Customer {
     name: string;
     address: string;
-    telefono: string;
+    telefono: number;
     ciudad: string;
 }

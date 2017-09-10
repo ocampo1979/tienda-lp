@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Customer } from '../customer';
 
 @Component({
   selector: 'customers-list',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ListComponent implements OnInit {
 
+  customersList:Array<Customer>;
+  
   constructor() { }
 
   ngOnInit() {
+    this.customersList=[
+      
+    ]
   }
 
 }
